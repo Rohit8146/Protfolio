@@ -24,9 +24,9 @@ export const footerData = {
   number: "+91 6280447574",
   email: "rohittandon545@gmail.com",
   subHeading: "You may also find me on these platforms!",
-  instagram: "#",
-  github: "#",
-  linkedin: "#",
-  copyright: "© 2023 | Designed and coded with ❤️ by Sagar Shah",
+  instagram: "https://www.instagram.com/_myth_0011",
+  github: "https://github.com/Rohit8146",
+  linkedin: "https://www.linkedin.com/in/rohit-tandon-28a10921b",
+  copyright: "© 2025 | Designed and coded with ❤️ by Rohit Tandon",
   copyrightLink: "/",
 };
