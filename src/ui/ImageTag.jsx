@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-function Image({ src, alt, link }) {
+function ImageTag({ src, alt, link }) {
   return (
     <div className="image_wrapper w-[100%] h-[100%]">
       {!link ? (
@@ -22,4 +22,4 @@ function Image({ src, alt, link }) {
   );
 }
 
-export default Image;
+export default ImageTag;

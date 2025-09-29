@@ -1,7 +1,13 @@
-import React from "react";
+import About from "../components/About/About";
+import { Banner } from "../components/Banner/Banner";
 
 function Homepage() {
-  return <div className="text-7xl text-center py-50">Homepage</div>;
+  return (
+    <main>
+      <Banner />
+      <About />
+    </main>
+  );
 }
 
 export default Homepage;

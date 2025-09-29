@@ -2,7 +2,7 @@ import { headerLinks } from "../../data/data";
 import imageSrc from "../../../public/logo-black.svg";
 import imageWhiteSrc from "../../../public/logo-white.svg";
 import HeaderLink from "./HeaderLink";
-import Image from "../../ui/Image";
+import ImageTag from "../../ui/ImageTag";
 import ThemeToggler from "./ThemeToggler";
 import { useContext, useEffect } from "react";
 import { ProtfolioContext } from "../../context/ProtfolioContext";
@@ -15,14 +15,14 @@ function Header() {
     headerAnimation();
   }, []);
   return (
-    <header className="py-5">
+    <header className="py-5 w-[96%] mx-auto my-5 rounded-lg sticky top-5 z-50">
       <div className="container">
         <div className="inner_container flex flex-row justify-between items-center">
           <div className="logo_wrapper w-[80px] h-[100%]">
             {isDarkTheme ? (
-              <Image src={imageWhiteSrc} alt="logo" link="/" />
+              <ImageTag src={imageWhiteSrc} alt="logo" link="/" />
             ) : (
-              <Image src={imageSrc} alt="logo" link="/" />
+              <ImageTag src={imageSrc} alt="logo" link="/" />
             )}
           </div>
           <div className="flex flex-row items-center gap-10 ">
