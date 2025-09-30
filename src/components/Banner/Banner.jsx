@@ -24,11 +24,11 @@ export const Banner = () => {
                 <Paragraph description={BannerData.location} />
               </div>
               <span
-                class="availability flex flex-row gap-2 px-2"
+                className="availability flex flex-row gap-2 px-2"
                 role="status"
                 aria-live="polite"
               >
-                <span class="dot" aria-hidden="true"></span>
+                <span className="dot" aria-hidden="true"></span>
                 <Paragraph description={BannerData.availability} />
               </span>
             </div>

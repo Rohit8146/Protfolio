@@ -5,7 +5,7 @@ import { Paragraph } from "./../../ui/Paragraph";
 import { SocialLinks } from "./SocialLink";
 function Footer() {
   return (
-    <footer className="pt-10 pb-3">
+    <footer className="pt-10">
       <div className="footer-container">
         <div className="inner_container text-center">
           <Heading heading={footerData.heading} />

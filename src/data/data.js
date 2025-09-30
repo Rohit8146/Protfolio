@@ -1,4 +1,20 @@
 import bannerImage from "../assets/images/Me.png";
+import HTML from "../../src/assets/images/html-5.png";
+import CSS from "../../src/assets/images/css-3.png";
+import js from "../../src/assets/images/js.png";
+import Sass from "../../src/assets/images/sass.png";
+import Tailwind from "../../src/assets/images/tailwind.png";
+import Bootstrap from "../../src/assets/images/bootstrap.png";
+import react from "../../src/assets/images/React.png";
+import redux from "../../src/assets/images/icons8-redux-480.png";
+import reactNative from "../../src/assets/images/React.png";
+import nextjs from "../../src/assets/images/icons8-next.js-480.png";
+import figma from "../../src/assets/images/figma.png";
+import photoshop from "../../src/assets/images/photoshop.png";
+import shopify from "../../src/assets/images/shopify.png";
+import wordpress from "../../src/assets/images/wordpress.png";
+import Typescript from "../../src/assets/images/typescript.png";
+import github from "../../src/assets/images/social.png";
 
 export const headerLinks = [
   {
@@ -48,6 +64,178 @@ When I’m not coding, you’ll often find me exploring new tools, learning the 
   secondPara:
     "I’m currently available for new opportunities and freelance projects — so feel free to reach out and say hi!",
 };
+
+export const skillsData = {
+  heading: "Skills",
+  subHeading: "My strongest skills, tools, and technologies include:",
+  upperIcons: [
+    {
+      image: HTML,
+      text: "HTML",
+    },
+    {
+      image: CSS,
+      text: "CSS",
+    },
+    {
+      image: js,
+      text: "Javascript",
+    },
+    {
+      image: Sass,
+      text: "SASS",
+    },
+    {
+      image: Tailwind,
+      text: "Tailwind",
+    },
+    {
+      image: Bootstrap,
+      text: "Bootstrap",
+    },
+    {
+      image: figma,
+      text: "Figma",
+    },
+    {
+      image: photoshop,
+      text: "Photoshop",
+    },
+    {
+      image: HTML,
+      text: "HTML",
+    },
+    {
+      image: CSS,
+      text: "CSS",
+    },
+    {
+      image: js,
+      text: "Javascript",
+    },
+    {
+      image: Sass,
+      text: "SASS",
+    },
+    {
+      image: Tailwind,
+      text: "Tailwind",
+    },
+    {
+      image: Bootstrap,
+      text: "Bootstrap",
+    },
+    {
+      image: figma,
+      text: "Figma",
+    },
+    {
+      image: photoshop,
+      text: "Photoshop",
+    },
+  ],
+  lowerIcons: [
+    {
+      image: react,
+      text: "React",
+    },
+    {
+      image: redux,
+      text: "Redux",
+    },
+    {
+      image: nextjs,
+      text: "Nextjs",
+    },
+    {
+      image: Typescript,
+      text: "Typescript",
+    },
+    {
+      image: reactNative,
+      text: "React Native",
+    },
+    {
+      image: shopify,
+      text: "Shopify",
+    },
+    {
+      image: wordpress,
+      text: "Wordpress",
+    },
+    {
+      image: github,
+      text: "GitHub",
+    },
+    {
+      image: react,
+      text: "React",
+    },
+    {
+      image: redux,
+      text: "Redux",
+    },
+    {
+      image: nextjs,
+      text: "Nextjs",
+    },
+    {
+      image: Typescript,
+      text: "Typescript",
+    },
+    {
+      image: reactNative,
+      text: "React Native",
+    },
+    {
+      image: shopify,
+      text: "Shopify",
+    },
+    {
+      image: wordpress,
+      text: "Wordpress",
+    },
+    {
+      image: github,
+      text: "GitHub",
+    },
+  ],
+};
+
+export const MyExperience = {
+  heading: "Experience",
+  para: "Here is a quick summary of my most recent experiences:",
+  experienceData: [
+    {
+      companyName: "My Virtual Teams",
+      Post: "Associate Web Developer",
+      keyPoints: [
+        "Built and maintained responsive web applications using React.js and modern JavaScript (ES6+).",
+        "Converted Figma/UI designs into pixel-perfect, reusable components with a focus on accessibility.",
+        "Integrated REST APIs and optimized application performance with lazy loading and code-splitting.",
+        "Collaborated with cross-functional teams to deliver scalable, user-friendly digital experiences.",
+      ],
+      duration: "July 2023 - Current",
+    },
+    {
+      companyName: "Freelancing",
+      Post: "Web Developer",
+      keyPoints: [
+        "Designed and developed custom websites for clients using React.js, WordPress, and Shopify.",
+        "Collaborated with clients to gather requirements and deliver tailored digital solutions.",
+        "Optimized websites for performance, SEO, and mobile responsiveness.",
+        "Managed end-to-end project lifecycle, from planning and development to deployment and support.",
+      ],
+      duration: "Aug 2022 - July 2013",
+    },
+  ],
+};
+
+export const projcetData = {
+  heading: "Work",
+  para: "Some of the Worthy Projects I have built:"
+}
+
 
 export const footerData = {
   description:
