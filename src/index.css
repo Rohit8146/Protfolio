@@ -3,20 +3,26 @@
   --body-color: #000;
   --text-color: #fff;
   --dull-color: #111827;
-  --header-bg: #00000078;
-  --card-color : #0000003b
+  --header-light: #00000078;
+  --card-color: #0000003b;
 }
 [data-theme="light"] {
   --body-color: #fff;
   --text-color: #000;
   --dull-color: #f1efef;
   --header-light: #ffffff78;
-  --card-color : #ffffff
+  --card-color: #ffffff;
 }
 .container {
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 30px;
+}
+.project-card .image__wrapper,
+.tag {
+  background-color: var(--header-light);
+  color: var(--text-color);
+  font-size: 12px;
 }
 
 body {
@@ -45,6 +51,7 @@ div {
 ul {
   list-style-type: disc;
 }
+.project-card .inner_block,
 .experience,
 .about-me {
   background-color: var(--dull-color);
