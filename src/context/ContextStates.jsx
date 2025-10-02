@@ -24,9 +24,7 @@ function ContextStates({ children }) {
         isDarkTheme,
         setIsDarkTheme,
         isLoading,
-        setIsLoading,
-        isLoading,
-        setIsLoading,
+        setIsLoading
       }}
     >
       {children}
