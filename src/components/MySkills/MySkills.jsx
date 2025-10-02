@@ -6,7 +6,7 @@ import Marquee from "react-fast-marquee";
 
 function MySkills() {
   return (
-    <section className="my-skills overflow-x-hidden py-15">
+    <section id="skills" className="my-skills overflow-x-hidden py-15">
       <div className="slider-container">
         <div className="inner-container">
           <div className="heading-wrapper text-center">

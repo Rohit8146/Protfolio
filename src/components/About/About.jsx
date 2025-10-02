@@ -5,7 +5,7 @@ import { Paragraph } from "../../ui/Paragraph";
 
 function About() {
   return (
-    <section className="about-me py-10">
+    <section id="about" className="about-me py-10">
       <div className="container">
         <div className="inner_container">
             <div className="section-heading-wrapper py-10 text-center">
@@ -19,7 +19,7 @@ function About() {
               <Heading heading={aboutData.heading} />
               <Paragraph description={aboutData.description} />
               <h3 className="pt-5 font-bold">Quick Facts About Me:</h3>
-              <ul className="pb-5 px-5">
+              <ul className="list-points pb-5 px-5">
                 {aboutData.quickFacts.map((point, index) => {
                   return (
                     <li className="pt-2" key={index}>

@@ -2,10 +2,14 @@ import { Heading } from "../../ui/Heading";
 import { MyExperience } from "../../data/data";
 import { Paragraph } from "../../ui/Paragraph";
 import { ExperienceCard } from "./ExperienceCard";
+import { experienceCardAnimation } from "../../utils/animations";
+import { useEffect } from "react";
 function Experience() {
-
+  useEffect(() => {
+    experienceCardAnimation();
+  }, []);
   return (
-    <section className="experience py-20">
+    <section id="experience" className="experience py-20">
       <div className="container">
         <div className="heading-wrapper flex flex-col gap-1 pb-15 justify-center items-center">
           <Heading heading={MyExperience.heading} />

@@ -2,10 +2,15 @@ import { projcetData } from "../../data/data";
 import { Paragraph } from "../../ui/Paragraph";
 import { Heading } from "./../../ui/Heading";
 import { ProjectCard } from "./ProjectCard";
+import { projectCardAnimation } from "../../utils/animations";
+import { useEffect } from "react";
 
 function Project() {
+  useEffect(() => {
+    projectCardAnimation();
+  }, []);
   return (
-    <section className="project py-20">
+    <section id="projects" className="project py-20">
       <div className="container">
         <div className="heading-wrapper flex flex-col items-center mb-15 text-center">
           <Heading heading={projcetData.heading} />

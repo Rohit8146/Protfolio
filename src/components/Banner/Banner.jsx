@@ -4,10 +4,14 @@ import { Paragraph } from "./../../ui/Paragraph";
 import ImageTag from "../../ui/ImageTag";
 import { SocialLinks } from "../Footer/SocialLink";
 import LocationPinIcon from "@mui/icons-material/LocationPin";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { ProtfolioContext } from "../../context/ProtfolioContext";
+import { listPointAnimation } from "../../utils/animations";
 
 export const Banner = () => {
+  useEffect(() => {
+    listPointAnimation();
+  }, []);
   const { isDarkTheme } = useContext(ProtfolioContext);
   return (
     <section className="py-10">

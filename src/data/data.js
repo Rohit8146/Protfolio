@@ -31,11 +31,11 @@ export const headerLinks = [
   },
   {
     label: "Work",
-    link: "#work",
+    link: "#projects",
   },
   {
     label: "Contact",
-    link: "#contac",
+    link: "#contact",
   },
 ];
 

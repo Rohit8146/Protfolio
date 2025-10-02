@@ -1,5 +1,3 @@
-import { Heading } from "../../ui/Heading";
-
 export const ExperienceCard = ({ data }) => {
   return (
     <div className="card flex flex-row gap-10 shadow-lg inset-shadow-gray-100 p-15 rounded-2xl">
@@ -13,8 +11,7 @@ export const ExperienceCard = ({ data }) => {
           {data.keyPoints.map((point, index) => {
             return (
               <li className="pb-1.5" key={index}>
-                {" "}
-                {point}{" "}
+                {point}
               </li>
             );
           })}
