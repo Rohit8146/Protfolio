@@ -15,10 +15,8 @@ import shopify from "../../src/assets/images/shopify.png";
 import wordpress from "../../src/assets/images/wordpress.png";
 import Typescript from "../../src/assets/images/typescript.png";
 import github from "../../src/assets/images/social.png";
-import productImage1 from "../assets/images/pixanDiv.png";
-import productImage2 from "../assets/images/foresightDigitals.png";
-
-
+import productImage1 from "../../src/assets/images/pixanDiv.png";
+import productImage2 from "../../src/assets/images/foresightDigitals.png";
 
 export const headerLinks = [
   {
@@ -261,15 +259,7 @@ export const projcetData = {
       images: productImage2,
       description:
         "I created a modern and visually appealing web designer’s portfolio site that showcases creativity, design skills, and past projects in an engaging way. The site features a clean layout, smooth animations, and responsive design to ensure a seamless experience across all devices. It highlights services, case studies, and a contact section, making it easy for clients to explore work and connect for collaborations.",
-      tag: [
-        "React.js",
-        "JavaScript",
-        "CSS",
-        "HTML",
-        "Figma",
-        "GSAP",
-        "Lenix",
-      ],
+      tag: ["React.js", "JavaScript", "CSS", "HTML", "Figma", "GSAP", "Lenix"],
       link: "https://pixan-div.vercel.app/",
     },
   ],
