@@ -276,7 +276,7 @@ ul {
     visibility: hidden;
   }
   .mobile-active .navigation {
-    top: 0% !important;
+    top: -5% !important;
     transition: all 0.3s ease-in-out;
     opacity: 1;
     visibility: visible;
