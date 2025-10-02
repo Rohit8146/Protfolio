@@ -15,8 +15,8 @@ import shopify from "../../src/assets/images/shopify.png";
 import wordpress from "../../src/assets/images/wordpress.png";
 import Typescript from "../../src/assets/images/typescript.png";
 import github from "../../src/assets/images/social.png";
-import productImage1 from "../../public/foresightdigitals.png";
-import productImage2 from "../../public/pixandiv.png";
+import productImage1 from "../../src/assets/images/foresightdigitals.png";
+import productImage2 from "../../src/assets/images/pixandiv.png";
 
 export const headerLinks = [
   {

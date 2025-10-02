@@ -17,7 +17,11 @@ function ImageTag({ src, alt, link }) {
   }, []);
 
   return (
-    <div className="image_wrapper w-[100%] h-[100%]">
+    <div
+      className={`${
+        link ? "image_wrapper" : "image_wrapper__inner"
+      }  w-[100%] h-[100%]`}
+    >
       {!link ? (
         <img
           className=" w-[100%] h-[100%] object-contain"

@@ -156,7 +156,7 @@ export function socialIconAnimation() {
 
 export function fadeInImageAnimation() {
   gsap.fromTo(
-    ".image_wrapper",
+    ".image_wrapper__inner",
     { opacity: 0, y: 50 },
     {
       opacity: 1,
@@ -165,7 +165,7 @@ export function fadeInImageAnimation() {
       ease: "power3.out",
       stagger: 0.3,
       scrollTrigger: {
-        trigger: ".image_wrapper",
+        trigger: ".image_wrapper__inner",
         start: "top 80%",
         toggleActions: "play none none reverse",
       },
