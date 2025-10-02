@@ -14,5 +14,5 @@ export const Paragraph = ({ description }) => {
       fadeInAnimation();
     }
   }, []);
-  return <p className="paragraph-text">{description}</p>;
+  return <p className="paragraph-text max-md:text-[14px]">{description}</p>;
 };

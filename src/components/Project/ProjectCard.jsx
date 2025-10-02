@@ -11,17 +11,19 @@ export const ProjectCard = ({ project, index }) => {
           index % 2 === 0
             ? "flex-row max-md:flex-col"
             : "flex-row-reverse max-md:flex-col"
-        } inner_block p-15 rounded-2xl flex gap-10 mb-15 shadow-lg inset-shadow-gray-100 max-md:p-6`}
+        } inner_block p-15 rounded-2xl flex gap-10 mb-15 shadow-lg inset-shadow-gray-100 max-md:py-8 max-md:px-3 max-md-gap-6`}
       >
-        <div className="image__wrapper px-5 py-10 rounded-2xl w-[48%] max-md:w-full max-md:px-0 max-md:py-0">
+        <div className="image__wrapper px-5 py-10 rounded-2xl w-[48%] max-md:w-full max-md:px-0 max-md:py-0 max-md:rounded-2xl">
           <ImageTag src={project.images} alt="project" />
         </div>
-        <div className="content__wrapper content__wrapper flex flex-col gap-5 w-[48%] max-md:w-full max-md:items-center max-md:text-center">
-          <h3 className="project__title text-2xl font-bold">{project.title}</h3>
-          <p className="project__description max-md:text-left">
+        <div className="content__wrapper content__wrapper flex flex-col gap-5 w-[48%] max-md:w-full max-md:items-center max-md:text-center max-md:gap-2">
+          <h3 className="project__title text-2xl font-bold max-md:text-xl">
+            {project.title}
+          </h3>
+          <p className="project__description max-md:text-left max-md:text-[14px]">
             {project.description}
           </p>
-          <div className="tag__wrapper flex flex-wrap gap-3">
+          <div className="tag__wrapper flex flex-wrap gap-3 max-md:py-3">
             {project.tag.map((tag, index) => (
               <span key={index} className="tag py-2 px-6 rounded-full">
                 {tag}
@@ -32,8 +34,9 @@ export const ProjectCard = ({ project, index }) => {
             href={project.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="project__link"
+            className="project__link text-left w-full flex gap-3"
           >
+            View Project
             {isDarkTheme ? (
               <LaunchIcon sx={{ color: "#fff" }} />
             ) : (

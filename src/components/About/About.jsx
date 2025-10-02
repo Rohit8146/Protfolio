@@ -19,7 +19,7 @@ function About() {
               <Heading heading={aboutData.heading} />
               <Paragraph description={aboutData.description} />
               <h3 className="pt-5 font-bold">Quick Facts About Me:</h3>
-              <ul className="list-points pb-5 px-5">
+              <ul className="list-points pb-5 px-5 max-md:text-[14px]">
                 {aboutData.quickFacts.map((point, index) => {
                   return (
                     <li className="pt-2" key={index}>
