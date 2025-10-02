@@ -14,8 +14,21 @@ function ContextStates({ children }) {
     localStorage.setItem("isDarkTheme", JSON.stringify(isDarkTheme));
   }, [isDarkTheme]);
 
+  // loader
+
+  const [isLoading, setIsLoading] = useState(true);
+
   return (
-    <ProtfolioContext.Provider value={{ isDarkTheme, setIsDarkTheme }}>
+    <ProtfolioContext.Provider
+      value={{
+        isDarkTheme,
+        setIsDarkTheme,
+        isLoading,
+        setIsLoading,
+        isLoading,
+        setIsLoading,
+      }}
+    >
       {children}
     </ProtfolioContext.Provider>
   );

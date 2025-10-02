@@ -1,6 +1,5 @@
 import gsap from "gsap";
 import { ScrollTrigger, SplitText } from "gsap/all";
-import { Paragraph } from "./../ui/Paragraph";
 
 export const headerAnimation = () => {
   const header = document.querySelector("header");
@@ -70,7 +69,7 @@ export function fadeInAnimation() {
       stagger: 0.3,
       scrollTrigger: {
         trigger: ".paragraph-text",
-        start: "top 70%",
+        start: "top 80%",
         toggleActions: "play none none reverse",
       },
     }
@@ -153,4 +152,23 @@ export function socialIconAnimation() {
       }
     );
   });
+}
+
+export function fadeInImageAnimation() {
+  gsap.fromTo(
+    ".image_wrapper",
+    { opacity: 0, y: 50 },
+    {
+      opacity: 1,
+      y: 0,
+      duration: 3,
+      ease: "power3.out",
+      stagger: 0.3,
+      scrollTrigger: {
+        trigger: ".image_wrapper",
+        start: "top 80%",
+        toggleActions: "play none none reverse",
+      },
+    }
+  );
 }

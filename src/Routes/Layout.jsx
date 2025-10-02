@@ -4,10 +4,10 @@ import NotFound from "../pages/NotFound";
 function Layout() {
   return (
     <Routes>
-        <Route path="/" element={<Homepage />}></Route>
-        <Route path="/" element={<NotFound />}></Route>
+      <Route path="/" element={<Homepage />}></Route>
+      <Route path="*" element={<NotFound />}></Route>
     </Routes>
-  )
+  );
 }
 
-export default Layout
+export default Layout;

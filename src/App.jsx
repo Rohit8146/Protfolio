@@ -4,6 +4,7 @@ import Footer from "./components/Footer/Footer";
 import Layout from "./Routes/Layout";
 import ContextStates from "./context/ContextStates";
 import Lenis from "lenis";
+import { Loader } from "./components/Loader/Loader";
 
 function App() {
   const lenis = new Lenis();
@@ -18,6 +19,7 @@ function App() {
   return (
     <ContextStates>
       <BrowserRouter>
+        <Loader />
         <Header />
         <Layout />
         <Footer />

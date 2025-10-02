@@ -1,9 +1,21 @@
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import { SplitTextAnimation } from "../utils/animations";
+import { ProtfolioContext } from "./../context/ProtfolioContext";
 
 export const Heading = ({ heading }) => {
+  const { isLoading } = useContext(ProtfolioContext);
+
   useEffect(() => {
-    SplitTextAnimation();
+    if (isLoading) {
+      setTimeout(() => {
+        SplitTextAnimation();
+      }, 5000);
+      return;
+    } else {
+      SplitTextAnimation();
+    }
   }, []);
-  return <h2 className="heading text-3xl font-bold uppercase pb-3">{heading}</h2>;
+  return (
+    <h2 className="heading text-3xl font-bold uppercase pb-3">{heading}</h2>
+  );
 };

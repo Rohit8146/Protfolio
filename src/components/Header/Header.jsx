@@ -10,9 +10,17 @@ import { Button } from "../../ui/Button";
 import { headerAnimation } from "../../utils/animations";
 function Header() {
   const { isDarkTheme } = useContext(ProtfolioContext);
+  const { isLoading } = useContext(ProtfolioContext);
 
   useEffect(() => {
-    headerAnimation();
+    if (isLoading) {
+      setTimeout(() => {
+        headerAnimation();
+      }, 7000);
+      return;
+    } else {
+      headerAnimation();
+    }
   }, []);
   return (
     <header className="py-5 w-[96%] mx-auto my-5 rounded-lg sticky top-5 z-50">
