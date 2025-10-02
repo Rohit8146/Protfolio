@@ -1,21 +1,6 @@
 import { Link } from "react-router-dom";
-import { ProtfolioContext } from "../context/ProtfolioContext";
-import { useContext, useEffect } from "react";
-import { fadeInImageAnimation } from "../utils/animations";
 
 function ImageTag({ src, alt, link }) {
-  const { isLoading } = useContext(ProtfolioContext);
-  useEffect(() => {
-    if (isLoading) {
-      setTimeout(() => {
-        fadeInImageAnimation();
-      }, 5000);
-      return;
-    } else {
-      fadeInImageAnimation();
-    }
-  }, []);
-
   return (
     <div className="image_wrapper w-[100%] h-[100%]">
       {!link ? (
