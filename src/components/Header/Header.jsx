@@ -16,7 +16,7 @@ function Header() {
     if (isLoading) {
       setTimeout(() => {
         headerAnimation();
-      }, 7000);
+      }, 5000);
       return;
     } else {
       headerAnimation();
