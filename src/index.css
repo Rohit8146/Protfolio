@@ -5,6 +5,7 @@
   --dull-color: #111827;
   --header-light: #00000078;
   --card-color: #0000003b;
+  --opacity-color: #ffffff58;
 }
 [data-theme="light"] {
   --body-color: #fff;
@@ -12,6 +13,7 @@
   --dull-color: #f1efef;
   --header-light: #ffffff78;
   --card-color: #ffffff;
+  --opacity-color: #00000058;
 }
 .container {
   max-width: 1300px;
@@ -183,7 +185,7 @@ ul {
 /* loader  */
 
 .loading-page {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   background: var(--body-color);
@@ -229,4 +231,33 @@ ul {
   letter-spacing: 1.2rem;
   text-transform: uppercase;
   margin-left: 2rem;
+}
+
+.cursor-outer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid var(--text-color);
+  pointer-events: none;
+  z-index: 9998;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease;
+}
+
+.cursor-inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--text-color);
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: background-color 0.3s ease;
 }

@@ -9,7 +9,7 @@ function ImageTag({ src, alt, link }) {
     if (isLoading) {
       setTimeout(() => {
         fadeInImageAnimation();
-      }, 5000);
+      }, 6000);
       return;
     } else {
       fadeInImageAnimation();
