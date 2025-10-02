@@ -1,7 +1,7 @@
 import ImageTag from "./../../ui/ImageTag";
 export const IconText = ({ data }) => {
   return (
-    <div className="icon-text-wrapper flex flex-col items-center justify-center px-10 w-[160px]">
+    <div className="icon-text-wrapper flex flex-col items-center justify-center px-10 w-[160px] max-md:w-[100px] max-md:px-5">
       <div className="image--wrapper w-[80%]">
         <ImageTag src={data.image} alt={data.text} link="/" />
       </div>

@@ -11,11 +11,21 @@ const ThemeToggler = () => {
   };
 
   return (
-    <div onClick={changeTheme} className="cursor-pointer">
+    <div onClick={changeTheme} className="cursor-pointer max-md:mb-5">
       {isDarkTheme ? (
-        <SunnyIcon sx={{ color: "#fff" }} />
+        <div className="flex flex-row items-center gap-2">
+          <span className="icon--text pl-3 max-md:text-2xl max-md:font-black">
+            Light Mode{" "}
+          </span>{" "}
+          <SunnyIcon sx={{ color: "#fff" }} />
+        </div>
       ) : (
-        <DarkModeIcon sx={{ color: "#000" }} />
+        <div className="flex flex-row items-center gap-2">
+          <span className="icon--text pl-3 max-md:text-2xl max-md:font-black">
+            Dark Mode{" "}
+          </span>{" "}
+          <DarkModeIcon sx={{ color: "#000" }} />
+        </div>
       )}
     </div>
   );

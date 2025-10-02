@@ -8,15 +8,19 @@ export const ProjectCard = ({ project, index }) => {
     <div className="project-card">
       <div
         className={`${
-          index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-        } inner_block  p-15 rounded-2xl flex gap-10 mb-15 shadow-lg inset-shadow-gray-100 `}
+          index % 2 === 0
+            ? "flex-row max-md:flex-col"
+            : "flex-row-reverse max-md:flex-col"
+        } inner_block p-15 rounded-2xl flex gap-10 mb-15 shadow-lg inset-shadow-gray-100 max-md:p-6`}
       >
-        <div className="image__wrapper px-5 py-10 rounded-2xl w-[48%]">
+        <div className="image__wrapper px-5 py-10 rounded-2xl w-[48%] max-md:w-full max-md:px-0 max-md:py-0">
           <ImageTag src={project.images} alt="project" />
         </div>
-        <div className="content__wrapper content__wrapper flex flex-col gap-5 w-[48%]">
+        <div className="content__wrapper content__wrapper flex flex-col gap-5 w-[48%] max-md:w-full max-md:items-center max-md:text-center">
           <h3 className="project__title text-2xl font-bold">{project.title}</h3>
-          <p className="project__description">{project.description}</p>
+          <p className="project__description max-md:text-left">
+            {project.description}
+          </p>
           <div className="tag__wrapper flex flex-wrap gap-3">
             {project.tag.map((tag, index) => (
               <span key={index} className="tag py-2 px-6 rounded-full">

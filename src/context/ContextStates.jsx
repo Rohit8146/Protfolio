@@ -18,13 +18,25 @@ function ContextStates({ children }) {
 
   const [isLoading, setIsLoading] = useState(true);
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  // window.addEventListener("resize", () => {
+  //   if (window.innerWidth < 768) {
+  //     setIsMobile(true);
+  //   } else {
+  //     setIsMobile(false);
+  //   }
+  // });
+
   return (
     <ProtfolioContext.Provider
       value={{
         isDarkTheme,
         setIsDarkTheme,
         isLoading,
-        setIsLoading
+        setIsLoading,
+        isMobile,
+        setIsMobile,
       }}
     >
       {children}

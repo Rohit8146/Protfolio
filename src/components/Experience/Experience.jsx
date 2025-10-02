@@ -9,13 +9,13 @@ function Experience() {
     experienceCardAnimation();
   }, []);
   return (
-    <section id="experience" className="experience py-20">
+    <section id="experience" className="experience py-20 ">
       <div className="container">
         <div className="heading-wrapper flex flex-col gap-1 pb-15 justify-center items-center">
           <Heading heading={MyExperience.heading} />
           <Paragraph description={MyExperience.para} />
         </div>
-        <div className="card-wrapper flex flex-col gap-8">
+        <div className="card-wrapper flex flex-col gap-8 max-md:gap-6">
           {MyExperience.experienceData.map((data, index) => {
             return <ExperienceCard data={data} key={index} />;
           })}

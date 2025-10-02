@@ -18,7 +18,7 @@ function MySkills() {
             speed={100}
             loop={0}
             pauseOnHover={true}
-            className="uppericons-slider py-10 flex flex-row justify-between items-center"
+            className="uppericons-slider py-10 flex flex-row justify-between items-center max-md:py-5"
           >
             {skillsData.upperIcons.map((data, index) => {
               return <IconText data={data} key={index} />;
@@ -29,7 +29,7 @@ function MySkills() {
             speed={100}
             loop={0}
             pauseOnHover={true}
-            className="lowericons-slider py-10 flex flex-row justify-between items-center w-full"
+            className="lowericons-slider py-10 flex flex-row justify-between items-center w-full max-md:py-5"
           >
             {skillsData.lowerIcons.map((data, index) => {
               return <IconText data={data} key={index} />;

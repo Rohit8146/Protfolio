@@ -16,6 +16,8 @@ export const Heading = ({ heading }) => {
     }
   }, []);
   return (
-    <h2 className="heading text-3xl font-bold uppercase pb-3">{heading}</h2>
+    <h2 className="heading text-3xl font-bold uppercase pb-3 max-md:text-2xl">
+      {heading}
+    </h2>
   );
 };

@@ -221,7 +221,7 @@ ul {
 } */
 
 .name-container {
-  height: 3rem;
+  height: 2rem;
   overflow: hidden;
 }
 
@@ -260,4 +260,47 @@ ul {
   z-index: 9999;
   transform: translate(-50%, -50%);
   transition: background-color 0.3s ease;
+}
+
+.icon--text {
+  display: none;
+}
+
+@media (max-width: 786px) {
+  .navigation {
+    background-color: var(--body-color);
+    z-index: 99999;
+    top: -100% !important;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .mobile-active .navigation {
+    top: 0% !important;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+  }
+  .toggler-button {
+    border: 0px;
+  }
+  .icon--text {
+    display: block;
+  }
+  .container {
+    padding: 0 15px;
+  }
+  .logo-name {
+    font-size: 1.2rem;
+    letter-spacing: 0.7rem;
+    margin-left: 1rem;
+  }
+  #svg {
+    height: 10rem;
+    width: 10rem;
+  }
+  .cursor-inner,
+  .cursor-outer {
+    display: none;
+  }
 }

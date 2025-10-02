@@ -8,14 +8,14 @@ function About() {
     <section id="about" className="about-me py-10">
       <div className="container">
         <div className="inner_container">
-            <div className="section-heading-wrapper py-10 text-center">
-                <Heading heading={aboutData.sectionTitle} />
-            </div>
-          <div className="image-content flex justify-between items-center">
-            <div className="image_card w-[40%]">
+          <div className="section-heading-wrapper py-10 text-center">
+            <Heading heading={aboutData.sectionTitle} />
+          </div>
+          <div className="image-content flex justify-between items-center max-md:flex-col max-md:gap-10">
+            <div className="image_card w-[40%] max-md:w-full max-md:text-center">
               <ImageTag src={aboutData.image} alt="me" />
             </div>
-            <div className="content-side w-[55%]">
+            <div className="content-side w-[55%] max-md:w-full max-md:text-left">
               <Heading heading={aboutData.heading} />
               <Paragraph description={aboutData.description} />
               <h3 className="pt-5 font-bold">Quick Facts About Me:</h3>

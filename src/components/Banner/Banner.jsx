@@ -16,8 +16,8 @@ export const Banner = () => {
   return (
     <section className="py-10">
       <div className="container">
-        <div className="flex justify-between items-center">
-          <div className="content w-[60%]">
+        <div className="flex justify-between items-center max-md:flex-col-reverse max-md:gap-10">
+          <div className="content w-[60%] max-md:w-full max-md:text-left">
             <Heading heading={BannerData.heading} />
             <Paragraph description={BannerData.description} />
             <div className="location-availbility pt-7 flex flex-col gap-2">
@@ -44,7 +44,7 @@ export const Banner = () => {
               />
             </div>
           </div>
-          <div className="image_card w-[35%]">
+          <div className="image_card w-[35%] max-md:w-full max-md:text-center">
             <ImageTag src={BannerData.image} alt="Banner Image" />
           </div>
         </div>
