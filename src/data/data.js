@@ -25,15 +25,15 @@ export const headerLinks = [
   },
   {
     label: "About",
-    link: "#about",
+    link: "about",
   },
   {
     label: "Work",
-    link: "#projects",
+    link: "projects",
   },
   {
     label: "Contact",
-    link: "#contact",
+    link: "contact",
   },
 ];
 
