@@ -228,7 +228,7 @@ export const MyExperience = {
         "Optimized websites for performance, SEO, and mobile responsiveness.",
         "Managed end-to-end project lifecycle, from planning and development to deployment and support.",
       ],
-      duration: "Aug 2022 - July 2013",
+      duration: "Aug 2022 - July 2023",
     },
   ],
 };
