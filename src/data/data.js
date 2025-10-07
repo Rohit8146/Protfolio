@@ -270,7 +270,7 @@ export const footerData = {
     "What’s next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.",
   heading: "Get in touch",
   number: "+91 6280447574",
-  email: "rohittandon545@gmail.com",
+  email: "dev.rohittandon@gmail.com",
   subHeading: "You may also find me on these platforms!",
   instagram: "https://www.instagram.com/_myth_0011",
   github: "https://github.com/Rohit8146",

@@ -61,7 +61,11 @@ function Header() {
               className="toggler-button flex flex-row items-center gap-5 px-7 max-md:flex-col max-md:gap-5"
             >
               <ThemeToggler />
-              <Button title="Download CV" link="#" />
+              <Button
+                title="Download CV"
+                link="./public/Rohit_Tandon_Resume.pdf"
+                targetBlank={true}
+              />
             </div>
           </div>
 
