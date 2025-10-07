@@ -41,6 +41,7 @@ export const Banner = () => {
                 instagram={footerData.instagram}
                 github={footerData.github}
                 linkedin={footerData.linkedin}
+                whatsapp={footerData.whatsapp}
               />
             </div>
           </div>

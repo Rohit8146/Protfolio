@@ -53,10 +53,13 @@ function Header() {
             </div>
             <nav className="flex justify-between items-center gap-10 max-md:flex-col max-md:gap-10">
               {headerLinks.map((data, index) => (
-                <HeaderLink data={data} key={index} />
+                <HeaderLink data={data} key={index} handleClick={handleMenu} />
               ))}
             </nav>
-            <div className="toggler-button flex flex-row items-center gap-5 px-7 max-md:flex-col max-md:gap-5">
+            <div
+              onClick={handleMenu}
+              className="toggler-button flex flex-row items-center gap-5 px-7 max-md:flex-col max-md:gap-5"
+            >
               <ThemeToggler />
               <Button title="Download CV" link="#" />
             </div>

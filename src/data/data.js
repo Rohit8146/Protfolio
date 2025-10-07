@@ -275,6 +275,8 @@ export const footerData = {
   instagram: "https://www.instagram.com/_myth_0011",
   github: "https://github.com/Rohit8146",
   linkedin: "https://www.linkedin.com/in/rohit-tandon-28a10921b",
+  whatsapp:
+    "https://api.whatsapp.com/send/?phone=%2B916280447574&text&type=phone_number&app_absent=0",
   copyright: "© 2025 | Designed and coded with ❤️ by Rohit Tandon",
   copyrightLink: "/",
 };

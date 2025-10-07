@@ -1,9 +1,14 @@
 import { Link } from "react-scroll";
 
-const HeaderLink = ({ data }) => {
-  // console.log(data);
+const HeaderLink = ({ data, handleClick }) => {
   return (
-    <Link className="underline-hover-effect max-md:text-2xl max-md:font-black" to={data.link} smooth={true} duration={500}>
+    <Link
+      onClick={handleClick}
+      className="underline-hover-effect max-md:text-2xl max-md:font-black"
+      to={data.link}
+      smooth={true}
+      duration={500}
+    >
       {data.label}
     </Link>
   );
