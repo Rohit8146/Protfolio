@@ -1,4 +1,7 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/rohittan/public_html/
-    - /bin/rsync -av --exclude='.git' . $DEPLOYPATH
+    - export DEPLOYPATH=/home/CPANEL_USER/public_html/
+    - cd /home/CPANEL_USER/repos/my-react-app
+    - npm install
+    - npm run build
+ - /bin/rsync -av --delete dist/ $DEPLOYPATH
