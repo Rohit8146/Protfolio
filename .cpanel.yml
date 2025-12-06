@@ -1,7 +1,7 @@
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/CPANEL_USER/public_html/
-    - cd /home/CPANEL_USER/repos/my-react-app
+    - export DEPLOYPATH=/home/rohittan/public_html/
+    - cd /home/CPANEL_USER/repos/Protfolio
     - npm install
     - npm run build
  - /bin/rsync -av --delete dist/ $DEPLOYPATH
